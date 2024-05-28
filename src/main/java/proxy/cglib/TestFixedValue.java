@@ -1,4 +1,4 @@
-package cglib;
+package proxy.cglib;
 
 import net.sf.cglib.proxy.Enhancer;
 import net.sf.cglib.proxy.FixedValue;
@@ -17,7 +17,7 @@ public class TestFixedValue {
 			//FixedValue用来对所有拦截的方法做相同的返回值
 			@Override
 			public Object loadObject() throws Exception {
-				return "cglib";
+				return "proxy/cglib";
 			}
 		});
 		SampleClass proxy=(SampleClass)enhancer.create();

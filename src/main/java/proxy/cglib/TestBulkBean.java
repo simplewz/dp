@@ -1,4 +1,4 @@
-package cglib;
+package proxy.cglib;
 
 import net.sf.cglib.beans.BulkBean;
 
@@ -11,7 +11,7 @@ public class TestBulkBean {
 
 	public static void main(String[] args) {
 		BulkBean bulkBean=BulkBean.create(SampleBean.class, new String[] {"getValue"}, new String[] {"setValue"}, new Class[] {String.class});
-		SampleBean bean=new SampleBean("cglib");
+		SampleBean bean=new SampleBean("proxy/cglib");
 		Object[] propertyValues=bulkBean.getPropertyValues(bean);
 		System.out.println(propertyValues.length);
 		System.out.println(propertyValues[0]);

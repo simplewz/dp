@@ -1,19 +1,19 @@
-package cglib;
+package proxy.cglib;
 
 /**
  * @author simple
  * @email 13132398914@163.com
  * @date 2021年3月31日
  */
-public class OtherSampleBean {
+public class SampleBean {
 
 	private String value;
-	
-	public OtherSampleBean() {
+
+	public SampleBean() {
 		
 	}
 
-	public OtherSampleBean(String value) {
+	public SampleBean(String value) {
 		this.value = value;
 	}
 
@@ -27,6 +27,6 @@ public class OtherSampleBean {
 
 	@Override
 	public String toString() {
-		return "OtherSampleBean [value=" + value + "]";
+		return "SampleBean [value=" + value + "]";
 	}
 }

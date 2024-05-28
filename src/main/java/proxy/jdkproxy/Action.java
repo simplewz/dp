@@ -1,4 +1,4 @@
-package jdk.proxy;
+package proxy.jdkproxy;
 
 /**
  * 行为接口

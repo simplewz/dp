@@ -1,4 +1,4 @@
-package proxy;
+package proxy.staticproxy;
 
 /**
  * 客户端类

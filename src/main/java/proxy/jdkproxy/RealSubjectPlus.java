@@ -1,11 +1,11 @@
-package jdk.proxy;
+package proxy.jdkproxy;
 
 /**
  * @author simple
  * @email 13132398914@163.com
  * @date 2021年3月23日
  */
-public class RealSubjectPlus implements Subject{
+public class RealSubjectPlus implements Subject {
 
 	@Override
 	public void request() {

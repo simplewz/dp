@@ -1,4 +1,4 @@
-package proxy;
+package proxy.staticproxy;
 
 /**
  * 代理类，同样需要继承抽象父类/实现接口
@@ -10,7 +10,8 @@ public class Proxy extends Subject{
 	
 	//代理类需要持有被代理对象的引用
 	private RealSubject realSubject;
-	
+
+	//代理对象的构造方法，在创建代理对象时，需要传入被代理对象的引用
 	public Proxy(RealSubject realSubject) {
 		this.realSubject = realSubject;
 	}

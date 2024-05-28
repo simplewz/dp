@@ -1,11 +1,11 @@
-package jdk.proxy;
+package proxy.jdkproxy;
 
 /**
  * @author simple
  * @email 13132398914@163.com
  * @date 2021年3月23日
  */
-public class Person implements Action{
+public class Person implements Action {
 
 	@Override
 	public void walk() {

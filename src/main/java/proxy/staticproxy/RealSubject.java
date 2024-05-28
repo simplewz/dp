@@ -1,4 +1,4 @@
-package proxy;
+package proxy.staticproxy;
 
 /**
  * 继承抽象类/实现接口的真正实现类

@@ -1,4 +1,4 @@
-package proxy;
+package proxy.staticproxy;
 
 /**
  * 公公抽象父类，定义了需要被具体实现类实现的抽象方法

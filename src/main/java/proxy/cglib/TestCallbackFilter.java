@@ -1,4 +1,4 @@
-package cglib;
+package proxy.cglib;
 
 import java.lang.reflect.Method;
 
@@ -24,7 +24,7 @@ public class TestCallbackFilter {
 					return new FixedValue() {
 						@Override
 						public Object loadObject() throws Exception {
-							return "cglib";
+							return "proxy/cglib";
 						}
 					};
 				}else {
@@ -36,7 +36,7 @@ public class TestCallbackFilter {
 		enhancer.setCallbackFilter(callbackHelper);
 		enhancer.setCallbacks(callbackHelper.getCallbacks());
 		SampleClass proxy=(SampleClass) enhancer.create();
-		System.out.println(proxy.test("cglib"));
+		System.out.println(proxy.test("proxy/cglib"));
 		System.out.println(proxy.toString());
 		System.out.println(proxy.hashCode());
 	}

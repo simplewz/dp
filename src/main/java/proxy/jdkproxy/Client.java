@@ -1,4 +1,4 @@
-package jdk.proxy;
+package proxy.jdkproxy;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationHandler;

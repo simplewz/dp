@@ -1,4 +1,4 @@
-package cglib;
+package proxy.cglib;
 
 import net.sf.cglib.beans.ImmutableBean;
 
@@ -10,7 +10,7 @@ import net.sf.cglib.beans.ImmutableBean;
 public class TestImmutableBean {
 
 	public static void main(String[] args) {
-		SampleBean bean=new SampleBean("cglib");
+		SampleBean bean=new SampleBean("proxy/cglib");
 		SampleBean immutableBean=(SampleBean)ImmutableBean.create(bean);
 		System.out.println(bean.getValue());
 		System.out.println(immutableBean.getValue());
